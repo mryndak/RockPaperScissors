@@ -30,7 +30,7 @@ public class Application {
                     new ComputerPlayer().addPoints();
                     o++;
                     pc++;
-                } else {
+                } if (cm == 0) {
                     System.out.println("Draw!");
                     new HumanPlayer().addPoints();
                     new ComputerPlayer().addPoints();
@@ -50,7 +50,7 @@ public class Application {
                     new ComputerPlayer().addPoints();
                     o++;
 
-                } else {
+                } if( cm==2 ) {
                     System.out.println("Computer win!");
                     new ComputerPlayer().addPoints();
                     o++;
@@ -69,7 +69,7 @@ public class Application {
                     new HumanPlayer().addPoints();
                     o++;
                     ph++;
-                } else {
+                } if (cm == 2) {
                     System.out.println("Draw!");
                     new HumanPlayer().addPoints();
                     new ComputerPlayer().addPoints();
